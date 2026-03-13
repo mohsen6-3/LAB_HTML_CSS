@@ -1,0 +1,84 @@
+body{
+    background-color: ghostwhite;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: black;
+    border-radius: 10px;
+    position: sticky;
+    margin: 10px;
+    padding: 5px;
+}
+h3{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: solid;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+}
+li{
+    color:rgb(0, 0, 0);
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+}
+ul{
+    color:blue;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+p{
+    color: black;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: green;
+}
+a:visited{
+    color: rgb(128, 0, 0);
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th{
+    background-color: black;
+    color: white;
+}
+select{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+option{
+    color:blue
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
