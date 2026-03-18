@@ -1,45 +1,55 @@
-
-
-@media screen and (min-width: 60rem){
-    .container{ 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 20px;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: #e3e7ef;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+.container {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 .box{
     border: 1px solid black;
     display: block;
-    width: 95%;
+    width: 100%;
     height: auto;
     padding: 25px 30px;
     background: linear-gradient(to right, #007BFF, #00C6FF);
     color: white;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
-    border-radius: 10px;
-    transition: 
-        /* background-color 2s,
-        width 2s,
-        height 2s, */
-        transform 0.3s;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 .box:hover{
-    /* background-color: red;
-    width: 200px;
-    height: 200px; */
     transform: translatey(-3px);
 }
-
-.paragraph1,
-.paragraph2,
-.paragraph3{
+.navbar {
+    display: flex;
+    gap: 20px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius:8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+.card{
     color: rgb(0, 0, 0);
     margin-top: 10px;
     font-size: 20px;
@@ -48,15 +58,65 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     flex: 1 1 300px;
+    line-height: 1.8;
     transform: translateY(-4px);
     transition: 0.3s ease;
 }
-.container{
-    display: block;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
-p {
-    line-height: 1.7;
+.card h2{
+    margin-bottom: 15px;
+    color: black;
 }
+.footer{
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 60rem) {
+    .navbar {
+        justify-content: center;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1 1 300px;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.box,
+.navbar,
+.card {
+    animation: fadeInUp 0.8s ease;
+}
+.box::before {
+    content: "🤖 ";
+}
+.card:nth-child(2) {
+    border-left: 6px solid #00C6FF;
+}
+/* .article-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+} */
