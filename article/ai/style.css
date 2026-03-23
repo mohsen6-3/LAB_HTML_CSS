@@ -44,10 +44,12 @@ body {
     padding: 10px 15px;
     border-radius:8px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
 }
 .navbar a:hover {
     background-color: #007BFF;
     color: white;
+    transform:scale(1.00) ;
 }
 .card{
     color: rgb(0, 0, 0);
@@ -62,9 +64,13 @@ body {
     transform: translateY(-4px);
     transition: 0.3s ease;
 }
+.card  p{
+    font-size: 18px;
+}
 .card:hover{
     transform: translateY(-5px);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    border-left: 6px solid #007BFF;
 }
 .card h2{
     margin-bottom: 15px;
@@ -113,10 +119,30 @@ body {
     content: "🤖 ";
 }
 .card:nth-child(2) {
-    border-left: 6px solid #00C6FF;
+    /* border-left: 6px solid #00C6FF; */
+    animation-delay: 0.2s;
+}
+.card:nth-child(3) {
+    /* border-left: 6px solid #007BFF; */
+    animation-delay: 0.4s;
 }
 /* .article-image {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
 } */
+.article-image {
+    display: block;
+    margin: 15px auto;
+    width: 100;
+    max-width: 300px;
+    border-radius: 10px;
+    
+}
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
