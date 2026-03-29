@@ -6,11 +6,11 @@ body{
 }
 
 /* index.html file */
-/* .container {
-    max-width: 1200px;
+.container {
+    max-width: 1500px;
     margin: 20px auto;
-    padding: 0 20px;
-} */
+    padding: 0 ;
+}
 .header{
     display: flex;
     align-items: center;
@@ -93,6 +93,17 @@ body{
     transform: transform 0.3s ease, box-shadow 0.3s ease;
     transition: 0.3s ease;
 }
+.card a{
+    color: rgb(36, 58, 157);
+    font-weight: bold;
+}
+.card a:hover{
+    color: #007BFF;
+    text-decoration: underline;
+}
+.card a:visited{
+    color: #9343b8c1;
+}
 
 .card p {
     font-size: 18px;
@@ -103,6 +114,7 @@ body{
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
     border-left: 6px solid rgb(55, 56, 64);
 }
+
 .footer {
     text-align: center;
     color: #000000;
@@ -133,7 +145,6 @@ html {
 .top-bar {
     display: flex;
     justify-content: flex-end;
-    /* يخليه يمين */
     padding: 20px 40px;
 }
 

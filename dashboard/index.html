@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head dir ="ltr">
 <body>
     <div class="dashboard">
@@ -12,16 +13,16 @@
         <aside class="sidebar">
             <div class="logo"></div>
             <nav class="menu">
-                <a href="#">Control Tower</a>
-                <a href="#">Generate Quote</a>
-                <a href="#">Track Shipments</a>
-                <a href="#">Ai Console</a>
-                <a href="#">Customer Portal</a>
+                <a href="#"><i class="fa-solid fa-table-columns"></i> Control Tower</a>
+                <a href="#"><i class="fa-solid fa-file-invoice"></i> Generate Quote</a>
+                <a href="#"><i class="fa-solid fa-truck"></i> Track Shipments</a>
+                <a href="#"><i class="fa-solid fa-robot"></i> AI Console</a>
+                <a href="#"><i class="fa-solid fa-users"></i> Customer Portal</a>
                 <h4>INSIGHT & CONTROL</h4>
-                <a href="#">Documents</a>
-                <a href="#">Analytics</a>
-                <a href="#">Integrations</a>
-                <a href="#">Ai Training</a>
+                <a href="#"><i class="fa-solid fa-file"></i> Documents</a>
+                <a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                <a href="#" class="active"><i class="fa-solid fa-plug"></i> Integrations</a>
+                <a href="#"><i class="fa-solid fa-brain"></i> AI Training</a>
             </nav>
         </aside>
         <main class="main-content">
@@ -31,15 +32,101 @@
                     <p>Connect your freight operations with existing systems</p>
                 </header>
                 <section class="stats">
-                    <div class="card">Connected</div>
-                    <div class="card">Syncing</div>
-                    <div class="card">Errors</div>
+                    <div class="card">
+                        <p>Connected</p>
+                        <h2>45</h2>
+                        <span>Active integrations</span>
+                    </div>
+                    <div class="card">
+                        <p>Syncing</p>
+                        <h2>5</h2>
+                        <span>In Progress</span>
+                    </div>
+                    <div class="card">
+                        <p>Errors</p>
+                        <h2>1</h2>
+                        <span>Needs attention</span>
+                    </div>
+                    <div class="card">
+                        <p>Available</p>
+                        <h2>54</h2>
+                        <span>More to add</span>
+                    </div>
                 </section>
                 <section class="carrier-APIs">
                     <h2>Carrier APIs</h2>
+
+                    <div class="api-cards">
+                        <div class="api-card">
+                            <div class="api-header">
+                                <h3>Maersk Line</h3>
+                                <span class="status connected">Connected</span>
+                            </div>
+                            <p>AI-powered document generation and management</p>
+                            <button>View Integration</button>
+                        </div>
+                    
+                        <div class="api-card">
+                            <div class="api-header">
+                                <h3>Maersk Line</h3>
+                                <span class="status syncing">Syncing</span>
+                            </div>
+                            <p>AI-powered document generation and management</p>
+                            <button>View Integration</button>
+                        </div>
+                    
+                        <div class="api-card">
+                            <div class="api-header">
+                                <h3>Maersk Line</h3>
+                                <span class="status error">Error</span>
+                            </div>
+                            <p>AI-powered document generation and management</p>
+                            <button>View Integration</button>
+                        </div>
+                    
+                    </div>
                 </section>
                 <section class="system-integrations">
                     <h2>System Integrations</h2>
+                    <div class="integration-list">
+                    
+                        <div class="integration-item">
+                            <div>
+                                <h4>Salesforce CRM</h4>
+                                <p>Customer relationship management</p>
+                            </div>
+                            <span class="status connected">Connected</span>
+                            <button>Configure</button>
+                        </div>
+                    
+                        <div class="integration-item">
+                            <div>
+                                <h4>SAP TMS</h4>
+                                <p>Transportation management system</p>
+                            </div>
+                            <span class="status connected">Connected</span>
+                            <button>Configure</button>
+                        </div>
+                    
+                        <div class="integration-item">
+                            <div>
+                                <h4>Oracle ERP</h4>
+                                <p>Enterprise resource planning</p>
+                            </div>
+                            <span class="status syncing">Syncing</span>
+                            <button>Configure</button>
+                        </div>
+                    
+                        <div class="integration-item">
+                            <div>
+                                <h4>Microsoft Dynamics</h4>
+                                <p>Business applications</p>
+                            </div>
+                            <span class="status error">Error</span>
+                            <button>Configure</button>
+                        </div>
+                    
+                    </div>
                 </section>
             </article>
         </main>
