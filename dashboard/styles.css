@@ -1,0 +1,14 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(248, 244, 238);
+}
+.dashboard{
+    display: flex;
+    height: 100vh;
+}
+.sidebar
