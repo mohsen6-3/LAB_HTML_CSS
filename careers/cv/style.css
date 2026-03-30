@@ -141,7 +141,8 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Education file */
+/* All other files */
+
 .top-bar {
     display: flex;
     justify-content: flex-end;
